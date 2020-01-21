@@ -46,7 +46,7 @@ loop {
     raise 'Errno::EPIPE'
       system("notify-send 'An error occured in honey server!'")
     rescue 
-      puts ""
+      puts "Connection from #{remote_ip}:#{remote_port}"
   end
 end
 }
