@@ -32,8 +32,7 @@ loop {
   begin
     Thread.start(honey.accept) do |victim|
       sock_domain, remote_port, remote_hostname, remote_ip = victim.peeraddr
-      connected = "Connection from #{remote_ip}:#{remote_port}"
-      system("notify-send '#{connected}'")
+      puts "Connection from #{remote_ip}:#{remote_port}"
       victim.puts(b0)
       victim.puts(b1)
       victim.puts(b2)
