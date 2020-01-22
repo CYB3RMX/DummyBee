@@ -1,5 +1,5 @@
-# DummyBee v1.0
+# DummyBee v1.1
 A simple honeypot written with ruby.
 Distract intruders with unlimited login screen.
 
-- Usage: ```ruby DummyBee.rb [host] [port]```
+- Usage: ```sudo ruby DummyBee.rb [host] [port]```
