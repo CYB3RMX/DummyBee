@@ -15,7 +15,7 @@ o esnada cihaz bilgilerini alın.
 
 - Kullanım: ```sudo ruby DummyBee.rb [yerel ip] [port]```<br>
 [yerel ip]: <i>Yerel ağdaki ip adresi örn. 192.168.1.154</i><br>
-[port]: <i>Bagğlantının dinleneceği keyfi port numarası örn. 5555</i>
+[port]: <i>Bağlantının dinleneceği keyfi port numarası örn. 5555</i>
 
 # Screenshots/Ekran görüntüleri
 ![Server side](IMG_20200122_220414_479.jpg)
