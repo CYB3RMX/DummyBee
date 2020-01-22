@@ -1,7 +1,7 @@
 # DummyBee v1.1
 
 # Lang: EN
-A simple honeypot written with ruby.
+A simple honeypot written with ruby scripting language.
 Distract intruders with unlimited login screen.
 
 - Usage: ```sudo ruby DummyBee.rb [host] [port]```<br>
