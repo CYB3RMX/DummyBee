@@ -4,8 +4,8 @@
 A simple honeypot written with ruby.
 Distract intruders with unlimited login screen.
 
-- Usage: ```sudo ruby DummyBee.rb [host] [port]```
-[host]: <i>Your local ip address e.g. 192.168.1.154</i>
+- Usage: ```sudo ruby DummyBee.rb [host] [port]```<br>
+[host]: <i>Your local ip address e.g. 192.168.1.154</i><br>
 [port]: <i>Specific port e.g. 5555</i>
 
 # Lang: TR
@@ -13,8 +13,8 @@ Ruby scripting dili ile geliştirilmiş basit bir HoneyPot yazılımı.
 Ağınızdaki davetsiz misafirleri sonsuz bir login döngüsü ile şaşırtıp 
 o esnada cihaz bilgilerini alın.
 
-- Kullanım: ```sudo ruby DummyBee.rb [yerel ip] [port]```
-[yerel ip]: <i>Yerel ağdaki ip adresi örn. 192.168.1.154</i>
+- Kullanım: ```sudo ruby DummyBee.rb [yerel ip] [port]```<br>
+[yerel ip]: <i>Yerel ağdaki ip adresi örn. 192.168.1.154</i><br>
 [port]: <i>Bagğlantının dinleneceği keyfi port numarası örn. 5555</i>
 
 # Screenshots/Ekran görüntüleri
