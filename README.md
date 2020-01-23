@@ -9,6 +9,8 @@ Distract intruders with unlimited login screen.
 
 # Added new 23/01/2020
 - Now you can log your honeypot connections.
+- Bug fixes.
+- Now you can catch nmap scans.
 
 # Lang: TR
 Ruby ve python scripting dili ile geliştirilmiş basit bir HoneyPot yazılımı.
@@ -21,6 +23,8 @@ o esnada cihaz bilgilerini alın.
 # Yenilikler 23/01/2020
 - Artık gelen bağlantılar ve bağlantıyı yapan cihazların
 bilgileri kayıt altına alınacak.( kısaca log tutma :D )
+- Hata düzeltmeleri.
+- Nmap taramaları yakalanabilir hale getirildi.
 
 # Screenshots/Ekran görüntüleri
 ![Server side](IMG_20200122_220414_479.jpg)
