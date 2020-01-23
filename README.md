@@ -3,6 +3,8 @@
 # Lang: EN
 A simple honeypot written with ruby and python scripting language.
 Distract intruders with unlimited login screen.
+# Added new 23/01/2020
+- Now you can log your honeypot connections.
 
 - Usage: ```sudo ruby DummyBee.rb [host] [port]```<br>
 [host]: <i>Your local ip address e.g. 192.168.1.154</i><br>
@@ -12,6 +14,9 @@ Distract intruders with unlimited login screen.
 Ruby ve python scripting dili ile geliştirilmiş basit bir HoneyPot yazılımı.
 Ağınızdaki davetsiz misafirleri sonsuz bir login döngüsü ile şaşırtıp 
 o esnada cihaz bilgilerini alın.
+# Yenilikler 23/01/2020
+- Artık gelen bağlantılar ve bağlantıyı yapan cihazların
+bilgileri kayıt altına alınacak.( kısaca log tutma :D )
 
 - Kullanım: ```sudo ruby DummyBee.rb [yerel ip] [port]```<br>
 [yerel ip]: <i>Yerel ağdaki ip adresi örn. 192.168.1.154</i><br>
