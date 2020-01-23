@@ -1,4 +1,4 @@
-# DummyBee v1.1
+# DummyBee v1.2
 
 # Lang: EN
 A simple honeypot written with ruby and python scripting language.

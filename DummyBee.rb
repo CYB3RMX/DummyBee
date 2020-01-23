@@ -14,7 +14,7 @@ else
   | | | | | | |  _   _ \|  _   _ \| | | |  _ \ / _ \/ _ \
   | |_| | |_| | | | | | | | | | | | |_| | |_) |  __/  __/
   |____/ \__,_|_| |_| |_|_| |_| |_|\__, |____/ \___|\___|
-                                   |___/ v1.1
+                                   |___/ v1.2
 
     A Simple HoneyPot for Catching dummy bees :D
 
@@ -28,6 +28,9 @@ else
   b4 = "Password: "
   b5 = "Wrong Username or Password!!\n\n"
 
+  # Handling logs
+  logfile = File.new("honey.log", "a+")
+
   # Server side
   host = ARGV[0]
   port = ARGV[1]
@@ -36,12 +39,22 @@ else
   loop {
     begin
       Thread.start(honey.accept) do |victim|
+        # Dynamically logging time
+        time1 = Time.new
+        timevar = time1.inspect
+
+        # Getting connection information and logging
         sock_domain, remote_port, remote_hostname, remote_ip = victim.peeraddr
         puts "Connection from #{remote_ip}:#{remote_port}"
+        logfile.syswrite("Connection from #{remote_ip} at #{timevar}\n")
         system("sudo python3 getInfo.py #{remote_ip}")
+        
+        # Sending server banner
         victim.puts(b0)
         victim.puts(b1)
         victim.puts(b2)
+        
+        # Unlimited login area
         while 1
           victim.puts(b3)
           data = victim.gets
@@ -49,6 +62,8 @@ else
           data1 = victim.gets
           victim.puts(b5)
         end
+        
+        # Error handling
         raise 'Errno::EPIPE'
           puts "An error occured in honey server!"
         rescue 
