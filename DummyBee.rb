@@ -58,16 +58,15 @@ else
         while 1
           victim.puts(b3)
           data = victim.gets
+          puts "#{data}"
           victim.puts(b4)
           data1 = victim.gets
+          puts "#{data1}"
           victim.puts(b5)
         end
         
         # Error handling
-        raise 'Errno::EPIPE'
-          puts "An error occured in honey server!"
-        rescue 
-          puts "Connection from #{remote_ip}:#{remote_port}"
+        rescue
         end
     end
   }
